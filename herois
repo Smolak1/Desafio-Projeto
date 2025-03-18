@@ -1,0 +1,24 @@
+class hero{
+constructor(nome, idade, tipo){
+    this.nome = nome
+    this.idade = idade
+    this.tipo = tipo
+}
+
+
+atacar(tipo){
+if(this.tipo == "mago"){
+    console.log(`o mago atacou usando magia`)}
+    else if(this.tipo == "guerreiro"){
+        console.log(`o guerreiro atacou usando espada`)}
+        else if(this.tipo == "monge"){
+            console.log(`o monge atacou usando artes marciais`)}
+            else if(this.tipo == "ninja"){
+                console.log(`o ninja atacou usando shureken`)}
+               else{
+                    console.log(`heroi sem classe levou um soco e saiu voando`)}
+   }
+}
+
+let rodolfo = new hero("Rodolfo", 21, "ninja")
+rodolfo.atacar()
